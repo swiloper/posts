@@ -6,14 +6,72 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F41553E62F3FA2E200790612 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F41553E52F3FA2E200790612 /* Alamofire */; };
+		F41553E92F3FA2F000790612 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = F41553E82F3FA2F000790612 /* Factory */; };
+		F41553FF2F3FB68400790612 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = F41553FE2F3FB68400790612 /* Networking */; };
+		F41554012F3FB68700790612 /* Config in Frameworks */ = {isa = PBXBuildFile; productRef = F41554002F3FB68700790612 /* Config */; };
+		F41554062F3FC1F700790612 /* Entities in Frameworks */ = {isa = PBXBuildFile; productRef = F41554052F3FC1F700790612 /* Entities */; };
+		F415540F2F3FD0C300790612 /* Components in Frameworks */ = {isa = PBXBuildFile; productRef = F415540E2F3FD0C300790612 /* Components */; };
+		F41554112F3FD0C700790612 /* Interfaces in Frameworks */ = {isa = PBXBuildFile; productRef = F41554102F3FD0C700790612 /* Interfaces */; };
+		F41554152F3FD0D000790612 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = F41554142F3FD0D000790612 /* Persistence */; };
+		F41554172F3FD0D400790612 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = F41554162F3FD0D400790612 /* Search */; };
+		F41554192F3FD0D900790612 /* Trends in Frameworks */ = {isa = PBXBuildFile; productRef = F41554182F3FD0D800790612 /* Trends */; };
+		F415541B2F3FD0DD00790612 /* UseCases in Frameworks */ = {isa = PBXBuildFile; productRef = F415541A2F3FD0DD00790612 /* UseCases */; };
+		F41554212F3FD17700790612 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = F41554202F3FD17700790612 /* Data */; };
+		F41554242F3FD93000790612 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = F41554232F3FD93000790612 /* Utilities */; };
+		F41554FF2F3FE72300790612 /* Demark in Frameworks */ = {isa = PBXBuildFile; productRef = F41554FE2F3FE72300790612 /* Demark */; };
+		F41555022F3FF5D500790612 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F41555012F3FF5D500790612 /* Nuke */; };
+		F41555042F3FF5D500790612 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = F41555032F3FF5D500790612 /* NukeUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F41553D62F3FA2A500790612 /* Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F41553EF2F3FA33500790612 /* Exceptions for "Modules" folder in "Posts" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Domain/Entities,
+				Domain/Interfaces,
+				Domain/UseCases,
+				Features/Search,
+				Features/Trends,
+				Shared/Components,
+				Shared/Config,
+				Shared/Data,
+				Shared/Files,
+				Shared/Networking,
+				Shared/Persistence,
+				Shared/Utilities,
+			);
+			target = F41553D52F3FA2A500790612 /* Posts */;
+		};
+		F41554032F3FB9AB00790612 /* Exceptions for "Posts" folder in "Posts" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F41553D52F3FA2A500790612 /* Posts */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F41553D82F3FA2A500790612 /* Posts */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F41554032F3FB9AB00790612 /* Exceptions for "Posts" folder in "Posts" target */,
+			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		F41553EA2F3FA2F900790612 /* Modules */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F41553EF2F3FA33500790612 /* Exceptions for "Modules" folder in "Posts" target */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +81,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41555022F3FF5D500790612 /* Nuke in Frameworks */,
+				F415541B2F3FD0DD00790612 /* UseCases in Frameworks */,
+				F41554172F3FD0D400790612 /* Search in Frameworks */,
+				F41554012F3FB68700790612 /* Config in Frameworks */,
+				F41553FF2F3FB68400790612 /* Networking in Frameworks */,
+				F415540F2F3FD0C300790612 /* Components in Frameworks */,
+				F41554212F3FD17700790612 /* Data in Frameworks */,
+				F41553E62F3FA2E200790612 /* Alamofire in Frameworks */,
+				F41554192F3FD0D900790612 /* Trends in Frameworks */,
+				F41553E92F3FA2F000790612 /* Factory in Frameworks */,
+				F41554FF2F3FE72300790612 /* Demark in Frameworks */,
+				F41554152F3FD0D000790612 /* Persistence in Frameworks */,
+				F41554112F3FD0C700790612 /* Interfaces in Frameworks */,
+				F41554062F3FC1F700790612 /* Entities in Frameworks */,
+				F41555042F3FF5D500790612 /* NukeUI in Frameworks */,
+				F41554242F3FD93000790612 /* Utilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				F41553D82F3FA2A500790612 /* Posts */,
+				F41553EA2F3FA2F900790612 /* Modules */,
+				F41553FD2F3FB68400790612 /* Frameworks */,
 				F41553D72F3FA2A500790612 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +119,13 @@
 				F41553D62F3FA2A500790612 /* Posts.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F41553FD2F3FB68400790612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,9 +145,26 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F41553D82F3FA2A500790612 /* Posts */,
+				F41553EA2F3FA2F900790612 /* Modules */,
 			);
 			name = Posts;
 			packageProductDependencies = (
+				F41553E52F3FA2E200790612 /* Alamofire */,
+				F41553E82F3FA2F000790612 /* Factory */,
+				F41553FE2F3FB68400790612 /* Networking */,
+				F41554002F3FB68700790612 /* Config */,
+				F41554052F3FC1F700790612 /* Entities */,
+				F415540E2F3FD0C300790612 /* Components */,
+				F41554102F3FD0C700790612 /* Interfaces */,
+				F41554142F3FD0D000790612 /* Persistence */,
+				F41554162F3FD0D400790612 /* Search */,
+				F41554182F3FD0D800790612 /* Trends */,
+				F415541A2F3FD0DD00790612 /* UseCases */,
+				F41554202F3FD17700790612 /* Data */,
+				F41554232F3FD93000790612 /* Utilities */,
+				F41554FE2F3FE72300790612 /* Demark */,
+				F41555012F3FF5D500790612 /* Nuke */,
+				F41555032F3FF5D500790612 /* NukeUI */,
 			);
 			productName = Posts;
 			productReference = F41553D62F3FA2A500790612 /* Posts.app */;
@@ -94,6 +194,12 @@
 			);
 			mainGroup = F41553CD2F3FA2A500790612;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F41553E42F3FA2E200790612 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F41553E72F3FA2F000790612 /* XCRemoteSwiftPackageReference "Factory" */,
+				F41554FD2F3FE72300790612 /* XCRemoteSwiftPackageReference "Demark" */,
+				F41555002F3FF5D500790612 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F41553D72F3FA2A500790612 /* Products */;
 			projectDirPath = "";
@@ -127,6 +233,8 @@
 /* Begin XCBuildConfiguration section */
 		F41553DF2F3FA2A700790612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F41553D82F3FA2A500790612 /* Posts */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -191,6 +299,8 @@
 		};
 		F41553E02F3FA2A700790612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F41553D82F3FA2A500790612 /* Posts */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -248,6 +358,8 @@
 		};
 		F41553E22F3FA2A700790612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F41553D82F3FA2A500790612 /* Posts */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -256,11 +368,13 @@
 				DEVELOPMENT_TEAM = BJBR5CVTQD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Posts/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,17 +383,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Posts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F41553E32F3FA2A700790612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F41553D82F3FA2A500790612 /* Posts */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -288,11 +408,13 @@
 				DEVELOPMENT_TEAM = BJBR5CVTQD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Posts/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +423,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Posts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +458,113 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F41553E42F3FA2E200790612 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.11.1;
+			};
+		};
+		F41553E72F3FA2F000790612 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = exactVersion;
+				version = 2.5.3;
+			};
+		};
+		F41554FD2F3FE72300790612 /* XCRemoteSwiftPackageReference "Demark" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steipete/Demark";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
+		F41555002F3FF5D500790612 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F41553E52F3FA2E200790612 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41553E42F3FA2E200790612 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F41553E82F3FA2F000790612 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41553E72F3FA2F000790612 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		F41553FE2F3FB68400790612 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		F41554002F3FB68700790612 /* Config */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Config;
+		};
+		F41554052F3FC1F700790612 /* Entities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Entities;
+		};
+		F415540E2F3FD0C300790612 /* Components */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Components;
+		};
+		F41554102F3FD0C700790612 /* Interfaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Interfaces;
+		};
+		F41554142F3FD0D000790612 /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		F41554162F3FD0D400790612 /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Search;
+		};
+		F41554182F3FD0D800790612 /* Trends */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Trends;
+		};
+		F415541A2F3FD0DD00790612 /* UseCases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCases;
+		};
+		F41554202F3FD17700790612 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		F41554232F3FD93000790612 /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
+		};
+		F41554FE2F3FE72300790612 /* Demark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41554FD2F3FE72300790612 /* XCRemoteSwiftPackageReference "Demark" */;
+			productName = Demark;
+		};
+		F41555012F3FF5D500790612 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41555002F3FF5D500790612 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		F41555032F3FF5D500790612 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41555002F3FF5D500790612 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F41553CE2F3FA2A500790612 /* Project object */;
 }

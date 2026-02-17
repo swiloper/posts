@@ -1,0 +1,9 @@
+//
+//  Config.xcconfig
+//  Posts
+//
+//  Created by Ihor Myronishyn on 13.02.2026.
+//
+
+BASE_URL = mastodon.social
+TOKEN = RvA1_GVy31foB9f_-KL6odvJHoV5PvOUKLz2I5H8l8c
