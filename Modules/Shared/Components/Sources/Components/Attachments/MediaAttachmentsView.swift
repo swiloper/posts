@@ -127,5 +127,5 @@ struct MediaAttachmentsView: View {
 // MARK: - Preview
 
 #Preview {
-    
+    MediaAttachmentsView(attachments: [.preview])
 }

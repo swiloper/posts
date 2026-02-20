@@ -8,6 +8,7 @@
 import Nuke
 import NukeUI
 import SwiftUI
+import Entities
 
 struct RemoteImageView<Placeholder: View>: View {
     
@@ -73,5 +74,5 @@ struct RemoteImageView<Placeholder: View>: View {
 // MARK: - Preview
 
 #Preview {
-    RemoteImageView(path: nil)
+    RemoteImageView(path: MediaAttachment.preview.url)
 }

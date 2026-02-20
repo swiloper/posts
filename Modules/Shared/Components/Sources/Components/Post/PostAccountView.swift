@@ -73,5 +73,5 @@ struct PostAccountView: View {
 // MARK: - Preview
 
 #Preview {
-    
+    PostAccountView(post: .preview)
 }

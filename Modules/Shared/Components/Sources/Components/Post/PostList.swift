@@ -45,7 +45,7 @@ public struct PostList: View {
 // MARK: - Preview
 
 #Preview {
-    PostList(posts: []) {
+    PostList(posts: [.preview]) {
         // Nothing.
     } //: PostList
 }

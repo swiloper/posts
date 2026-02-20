@@ -47,7 +47,7 @@ public final class Post: Codable, Identifiable, @unchecked Sendable {
     
     // MARK: - Init
     
-    public init(id: String, createdAt: String, uri: String, url: String?, repliesCount: Int, reblogsCount: Int, favouritesCount: Int, editedAt: String?, content: String, account: Account, mediaAttachments: [MediaAttachment]) {
+    public init(id: String, createdAt: String, uri: String, url: String?, repliesCount: Int, reblogsCount: Int, favouritesCount: Int, editedAt: String? = nil, content: String, account: Account, mediaAttachments: [MediaAttachment]) {
         self.id = id
         self.createdAt = createdAt
         self.uri = uri
@@ -110,4 +110,21 @@ extension Post: Hashable {
         hasher.combine(account)
         hasher.combine(mediaAttachments)
     }
+}
+
+// MARK: - Preview
+
+public extension Post {
+    static let preview = Post(
+        id: "116100948206882049",
+        createdAt: "2026-02-20T03:57:56.000Z",
+        uri: "https://mastodonapp.uk/users/GetCarter/statuses/116100948079210585",
+        url: "https://mastodonapp.uk/@GetCarter/116100948079210585",
+        repliesCount: .zero,
+        reblogsCount: 56,
+        favouritesCount: 95,
+        content: "<p>The first proper view of Liathach as one travels down Glen Torridon never fails to impress. Photo: Yesterday morning.</p>",
+        account: .preview,
+        mediaAttachments: [.preview]
+    )
 }

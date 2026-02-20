@@ -96,5 +96,5 @@ struct PostActionsView: View {
 // MARK: - Preview
 
 #Preview {
-    
+    PostActionsView(post: .preview)
 }

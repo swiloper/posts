@@ -85,11 +85,29 @@ public extension MediaAttachment {
         
         // MARK: - Init
         
-        public init(width: CGFloat?, height: CGFloat?, aspect: CGFloat?, duration: CGFloat?) {
+        public init(width: CGFloat?, height: CGFloat?, aspect: CGFloat?, duration: CGFloat? = nil) {
             self.width = width
             self.height = height
             self.aspect = aspect
             self.duration = duration
         }
     }
+}
+
+// MARK: - Preview
+
+public extension MediaAttachment {
+    static let preview = MediaAttachment(
+        id: "116100948164867427",
+        type: .image,
+        url: "https://files.mastodon.social/cache/media_attachments/files/116/100/948/164/867/427/original/457b33d35b6254a3.jpg",
+        preview: "https://files.mastodon.social/cache/media_attachments/files/116/100/948/164/867/427/small/457b33d35b6254a3.jpg",
+        meta: Meta(
+            small: Info(
+                width: 607,
+                height: 380,
+                aspect: 1.6
+            )
+        )
+    )
 }

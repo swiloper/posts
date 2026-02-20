@@ -38,3 +38,16 @@ public struct Account: Codable, Identifiable, Hashable, Sendable {
         case url
     }
 }
+
+// MARK: - Preview
+
+public extension Account {
+    static let preview = Account(
+        id: "109312637406273079",
+        acct: "GetCarter@mastodonapp.uk",
+        username: "GetCarter",
+        displayName: "Steve Carter",
+        avatar: "https://files.mastodon.social/cache/accounts/avatars/109/312/637/406/273/079/original/7397c8bd66790dd3.jpg",
+        url: "https://mastodonapp.uk/@GetCarter"
+    )
+}

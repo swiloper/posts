@@ -34,5 +34,5 @@ struct PostTextContentView: View {
 // MARK: - Preview
 
 #Preview {
-    
+    PostTextContentView(post: .preview)
 }

@@ -60,5 +60,5 @@ public struct PostView: View {
 }
 
 #Preview {
-    
+    PostView(post: .preview)
 }
